@@ -1,1 +1,13 @@
 @import "tailwindcss";
+.filter-invert {
+    filter: invert(1);
+  }
+.beige{color:#F0EBE0;} 
+@media (max-width: 640px) {
+#logo{filter:invert(1);}
+}
+/*
+#F0EBE0
+#949496
+#010101
+*/

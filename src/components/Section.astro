@@ -12,12 +12,17 @@ const { color, title, subtitle, id } = Astro.props;
     class="z-30 relative h-full flex flex-col text-center lg:text-start lg:pl-10"
   >
     <header class="flex flex-col gap-2">
-      <h2 class={`text-[#FFFAFA] pt-30 text-7xl font-medium`}>
+      <h2 class={`text-[#FFFAFA] md:pt-80 pt-30 text-7xl font-medium`}>
         {title}
       </h2>
       <p class={`text-[#FFFAFA] text-lg px-2`}>
         {subtitle}
       </p>
+      <a
+        href=""
+        class="bg-white mx-auto md:mx-0 text-black px-4 py-2 mt-4 w-[120px] text-sm text-center hover:bg-black hover:text-white border border-white transition"
+        >VER MAS</a
+      >
     </header>
   </div>
 
