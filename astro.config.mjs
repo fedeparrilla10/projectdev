@@ -7,5 +7,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: "https://fedeparrilla10.github.io",
-  base: "reginadev",
+  base: "projectdev",
 });
