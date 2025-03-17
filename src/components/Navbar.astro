@@ -1,5 +1,5 @@
 <nav
-  class="fixed top-0 left-0 z-50 w-full transition-all duration-300"
+  class="fixed top-0 left-0 z-50 w-full transition-all duration-300 overflow-x-hidden"
   id="navbar"
 >
   <div class="mx-auto px-4 sm:px-6 lg:px-8 bg-[#F0EBE0] md:bg-[transparent]">
@@ -7,7 +7,12 @@
       <!-- logo -->
       <div class="flex-shrink-0">
         <a href="/" class="text-2xl font-bold text-black">
-          <img src="/JarqueLogotipo.png" alt="Logo" class="h-5" id="logo" />
+          <img
+            src="reginadev/JarqueLogotipo.png"
+            alt="Logo"
+            class="h-5"
+            id="logo"
+          />
         </a>
       </div>
 
@@ -46,7 +51,7 @@
   <!-- menu mobile -->
   <div
     id="mobile-menu"
-    class="max-h-0 overflow-hidden bg-[#F0EBE0] border-b-2 transition-allduration-500 ease-in-out md:hidden"
+    class="max-h-0 overflow-hidden bg-[#F0EBE0] transition-all duration-500 ease-in-out md:hidden"
   >
     <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 pl-5"
       >Inicio</a
@@ -72,14 +77,14 @@
 
     window.addEventListener("scroll", function () {
       if (window.scrollY > 50) {
-        navbar?.classList.add("bg-[#F0EBE0]", "border-b", "border-black");
+        navbar?.classList.add("bg-[#F0EBE0]");
         logo?.classList.add("filter-invert");
         links.forEach((link) => {
           link.classList.add("text-black");
           link.classList.remove("text-white");
         });
       } else {
-        navbar?.classList.remove("bg-[#F0EBE0]", "border-b");
+        navbar?.classList.remove("bg-[#F0EBE0]");
         logo?.classList.remove("filter-invert");
         links.forEach((link) => {
           link.classList.remove("text-black");
@@ -91,9 +96,9 @@
     menuBtn?.addEventListener("click", function () {
       if (mobileMenu?.classList.contains("max-h-0")) {
         mobileMenu?.classList.remove("max-h-0");
-        mobileMenu?.classList.add("max-h-[300px]");
+        mobileMenu?.classList.add("max-h-[100%]");
       } else {
-        mobileMenu?.classList.remove("max-h-[300px]");
+        mobileMenu?.classList.remove("max-h-[100%]");
         mobileMenu?.classList.add("max-h-0");
       }
     });

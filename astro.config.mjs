@@ -6,4 +6,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  site: "https://fedeparrilla10.github.io",
+  base: "reginadev",
 });
