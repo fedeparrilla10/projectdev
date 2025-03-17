@@ -1,0 +1,94 @@
+<nav
+    class="fixed top-0 left-0 z-50 w-full transition-all duration-300 overflow-x-hidden"
+    id="navbar"
+>
+    <div class="mx-auto px-4 sm:px-6 lg:px-8 bg-[#010101] md:bg-[#010101]">
+        <div class="flex justify-between items-center h-16">
+            <!-- logo -->
+            <div class="flex-shrink-0">
+                <a href="/" class="text-2xl font-bold filter-invert">
+                    <img
+                        src="/projectdev/JarqueLogotipo.png"
+                        alt="Logo"
+                        class="h-5 filter-invert"
+                        id="logo"
+                    />
+                </a>
+            </div>
+
+            <!-- menu desktop -->
+            <div class="hidden md:flex space-x-6">
+                <a
+                    href="#"
+                    class="text-white transition nav-link hover:text-[#F0EBE0]"
+                    >Inicio</a
+                >
+                <a
+                    href="#"
+                    class="text-white transition nav-link hover:text-[#F0EBE0]"
+                    >Servicios</a
+                >
+                <a
+                    href="#"
+                    class="text-white transition nav-link hover:text-[#F0EBE0]"
+                    >Contacto</a
+                >
+            </div>
+
+            <!-- boton -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg
+                    class="h-6 w-6 text-black"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        id="menu-icon"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        color="#fff"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- menu mobile -->
+    <div
+        id="mobile-menu"
+        class="max-h-0 overflow-hidden bg-[#000] transition-all duration-500 ease-in-out md:hidden"
+    >
+        <a href="#" class="block px-4 py-2 text-white hover:bg-gray-100 pl-5"
+            >Inicio</a
+        >
+        <a href="#" class="block px-4 py-2 text-white hover:bg-gray-100 pl-5"
+            >Servicios</a
+        >
+        <a
+            href="#"
+            class="block px-4 py-2 text-white hover:bg-gray-100 pb-4 pl-5"
+            >Contacto</a
+        >
+    </div>
+</nav>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.getElementById("navbar");
+        const logo = document.getElementById("logo");
+        const links = document.querySelectorAll(".nav-link");
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn?.addEventListener("click", function () {
+            if (mobileMenu?.classList.contains("max-h-0")) {
+                mobileMenu?.classList.remove("max-h-0");
+                mobileMenu?.classList.add("max-h-[100%]");
+            } else {
+                mobileMenu?.classList.remove("max-h-[100%]");
+                mobileMenu?.classList.add("max-h-0");
+            }
+        });
+    });
+</script>

@@ -1,0 +1,97 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar2.astro";
+import Lookfeel from "../components/Lookfeel.astro";
+import Renders from "../components/Renders.astro";
+import Detalles from "../components/Detalles.astro";
+import Footer from "../components/footer.astro";
+import SmoothScroll from "../components/SmoothScroll.astro";
+import "../styles/global.css";
+---
+
+<SmoothScroll />
+<Layout>
+    <Navbar />
+    <section class="detail w-full bg-[#F0EBE0] pt-[120px] pb-[44px]" id="intro">
+        <div class="mx-auto px-4 md:flex sm:px-6 lg:px-8">
+            <div class="md:w-1/4 border-b pb-5 w-full">
+                <h1 class="font-thin">PROJECT DEVELOPMENT</h1>
+                <p class="pb-4">Orlando | USA Hospitality</p>
+                <h2
+                    class="text-6xl
+                    font-bold
+                    pb-2"
+                >
+                    NOBU ORLANDO
+                </h2>
+                <p class="text-sm">
+                    SITE SIZE 650,000 SQFT <br /> BUILDING AREA 437,036 SQFT <br
+                    /> KEYS 363
+                </p>
+
+                <ul class="border-t pt-4 mt-[81px] border-b">
+                    <li class="mb-4">
+                        <a
+                            href="#intro"
+                            class="bg-black text-white p-2 mb-5 hover:text-black hover:bg-transparent transition"
+                            >→ INTRO</a
+                        >
+                    </li>
+                    <li class="mb-4">
+                        <a
+                            href="#lookfeel"
+                            class="bg-black text-white p-2 mb-5 hover:text-black hover:bg-transparent transition"
+                            >→ LOOK & FEEL</a
+                        >
+                    </li>
+                    <li class="mb-4">
+                        <a
+                            href="#renders"
+                            class="bg-black
+                            text-white
+                            p-2
+                            mb-5
+                            hover:text-black
+                            hover:bg-transparent transition"
+                            >→ RENDERS</a
+                        >
+                    </li>
+                    <li class="mb-4">
+                        <a
+                            href="#detalles"
+                            class="bg-black
+                            text-white
+                            p-2
+                            mb-5
+                            hover:text-black
+                            hover:bg-transparent transition"
+                            >→ DETALLES</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="md:w-3/4 border-b pb-5 md:pl-[120px] w-full pb-[120px]">
+                <img
+                    slot="background"
+                    class="w-full"
+                    src="/projectdev/unico_jamaica.png"
+                />
+                <p class="pt-4">
+                    Nobu Orlando is an upscale, contemporary retreat showcasing
+                    luxury and Japanese minimalism. Featuring clean lines,
+                    natural materials, and expansive windows, the design
+                    emphasizes natural light and lush views. Open inviting
+                    public spaces and tranquil elegant guest rooms with modern
+                    amenities and private balconies or terraces, enhance the
+                    guest experience. Landscaped gardens and water features
+                    create a serene oasis within the vibrant energy of Orlando.
+                </p>
+                <Lookfeel />
+                <Renders />
+                <Detalles />
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</Layout>
