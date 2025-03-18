@@ -1,49 +1,125 @@
-<div id="renders">
-    <h3 class="border-b mt-[81px] text-xl pb-3 font-bold mb-4">RENDERS</h3>
+---
+import Modal from "./Modal.astro";
+---
 
-    <div class="grid grid-cols-3 gap-2">
-        <div>
-            <img
-                class="w-full md:h-[400px] h-[100px] object-cover"
-                src="lookfeel/foto1.jpg"
-                alt=""
-            />
+<div id="renders">
+  <h3 class="border-b mt-[81px] text-xl pb-3 font-bold mb-4">RENDERS</h3>
+
+  <div class="flex flex-col gap-4">
+    <Modal id="dialog" src="nobuorlando1.png">
+      <main slot="main">
+        <div class="flex flex-col items-center">
+          <div class="w-full text-center">
+            <h1 class="font-thin">PROJECT DEVELOPMENT</h1>
+            <p class="pb-4">NOBU ORLANDO</p>
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold pb-2"
+            >
+              KING SIZE BED 1
+            </h2>
+            <p class="text-sm">
+              SITE SIZE 650,000 SQFT <br /> BUILDING AREA 437,036 SQFT <br /> KEYS
+              363
+            </p>
+          </div>
+          <img
+            src={"detalle/detail1.png"}
+            alt="Detail image"
+            class="object-cover"
+          />
         </div>
-        <div>
-            <img
-                class="w-full md:h-[400px] h-[100px] object-cover"
-                src="lookfeel/foto2.jpg"
-                alt=""
-            />
+      </main>
+      <button
+        class="cursor-pointer px-5 py-1 border-2 rounded-xl font-semibold"
+        slot="close">Close</button
+      >
+    </Modal>
+
+    <Modal id="dialog2" src="nobuorlando2.png">
+      <main slot="main">
+        <div class="flex flex-col items-center">
+          <div class="w-full text-center">
+            <h1 class="font-thin">PROJECT DEVELOPMENT</h1>
+            <p class="pb-4">NOBU ORLANDO</p>
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold pb-2"
+            >
+              KING SIZE BED 2
+            </h2>
+            <p class="text-sm">
+              SITE SIZE 650,000 SQFT <br /> BUILDING AREA 437,036 SQFT <br /> KEYS
+              363
+            </p>
+          </div>
+          <img
+            src={"detalle/detail1.png"}
+            alt="Detail image"
+            class="object-cover"
+          />
         </div>
-        <div>
-            <img
-                class="w-full
-                md:h-[400px] h-[100px] object-cover"
-                src="lookfeel/foto3.jpg"
-                alt=""
-            />
+      </main>
+      <button
+        class="cursor-pointer px-5 py-1 border-2 rounded-xl font-semibold"
+        slot="close">Close</button
+      >
+    </Modal>
+
+    <Modal id="dialog3" src="nobuorlando3.png">
+      <main slot="main">
+        <div class="flex flex-col items-center">
+          <div class="w-full text-center">
+            <h1 class="font-thin">PROJECT DEVELOPMENT</h1>
+            <p class="pb-4">NOBU ORLANDO</p>
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold pb-2"
+            >
+              KING SIZE BED 3
+            </h2>
+            <p class="text-sm">
+              SITE SIZE 650,000 SQFT <br /> BUILDING AREA 437,036 SQFT <br /> KEYS
+              363
+            </p>
+          </div>
+          <img
+            src={"detalle/detail1.png"}
+            alt="Detail image"
+            class="object-cover"
+          />
         </div>
-        <div>
-            <img
-                class="w-full md:h-[400px] h-[100px] object-cover"
-                src="lookfeel/foto4.jpg"
-                alt=""
-            />
+      </main>
+      <button
+        class="cursor-pointer px-5 py-1 border-2 rounded-xl font-semibold"
+        slot="close">Close</button
+      >
+    </Modal>
+
+    <Modal id="dialog4" src="nobuorlando4.png">
+      <main slot="main">
+        <div class="flex flex-col items-center">
+          <div class="w-full text-center">
+            <h1 class="font-thin">PROJECT DEVELOPMENT</h1>
+            <p class="pb-4">NOBU ORLANDO</p>
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold pb-2"
+            >
+              KING SIZE BED 4
+            </h2>
+            <p class="text-sm">
+              SITE SIZE 650,000 SQFT <br /> BUILDING AREA 437,036 SQFT <br /> KEYS
+              363
+            </p>
+          </div>
+          <img
+            src={"detalle/detail1.png"}
+            alt="Detail image"
+            class="object-cover"
+          />
         </div>
-        <div>
-            <img
-                class="w-full md:h-[400px] h-[100px] object-cover"
-                src="lookfeel/foto5.jpg"
-                alt=""
-            />
-        </div>
-        <div>
-            <img
-                class="w-full md:h-[400px] h-[100px] object-cover"
-                src="lookfeel/foto6.jpg"
-                alt=""
-            />
-        </div>
-    </div>
+      </main>
+      <button
+        class="cursor-pointer px-5 py-1 border-2 rounded-xl font-semibold"
+        slot="close">Close</button
+      >
+    </Modal>
+  </div>
 </div>

@@ -1,0 +1,31 @@
+---
+const { id, src } = Astro.props;
+---
+
+<img
+  src={src}
+  alt="Picture of the room"
+  class="w-full h-full object-cover cursor-pointer"
+  onclick={`document.getElementById('${id}').showModal()`}
+/>
+
+<dialog
+  id={id}
+  class="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-lg shadow-lg p-5 md:max-w-6xl bg-white w-full"
+>
+  <slot name="main" />
+  <form class="flex items-center justify-center text-center" method="dialog">
+    <slot name="close" />
+  </form>
+</dialog>
+
+<style>
+  dialog::backdrop {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+</style>
