@@ -9,5 +9,146 @@ import UnicoJamaica from "../components/UnicoJamaica.astro";
 <Layout>
   <Navbar />
   <UnicoJamaica />
+  <section class="bg-[#F0EBE0]">
+    <div class="w-full xl:w-[80%] px-1 md:px-10 mx-auto">
+      <h2 class="pl-2 text-2xl font-semibold pb-3 mb-7 border-b-1">
+        INTEGRANTES
+      </h2>
+      <div class="slider center">
+        <div class="clip text-center relative">
+          <img
+            src="/projectdev/team/paula.png"
+            class="md:h-[300px] h-[250px] object cover"
+          />
+          <p
+            class="text-center position absolute right-0 left-0 mx-auto pt-1 text-md pl-4 pr-4 mt-4 underline bottom-[141px]"
+          >
+            PAULA PENA
+          </p>
+        </div>
+        <div class="clip text-center relative">
+          <img
+            src="/projectdev/team/rafa.png"
+            class="md:h-[300px] h-[250px] object cover"
+          />
+          <p
+            class="text-center position absolute right-0 left-0 mx-auto pt-1 text-md pl-4 pr-4 mt-4 underline bottom-[141px]"
+          >
+            RAFA BUZALI
+          </p>
+        </div>
+        <div class="clip text-center relative">
+          <img
+            src="/projectdev/team/begona.png"
+            class="md:h-[300px] h-[250px] object cover"
+          />
+          <p
+            class="text-center position absolute right-0 left-0 mx-auto pt-1 text-md pl-4 pr-4 mt-4 underline bottom-[141px]"
+          >
+            BEGOÑA VELÉZ
+          </p>
+        </div>
+        <div class="clip text-center relative">
+          <img
+            src="/projectdev/team/paula.png"
+            class="md:h-[300px] h-[250px] object cover"
+          />
+          <p
+            class="text-center position absolute right-0 left-0 mx-auto pt-1 text-md pl-4 pr-4 mt-4 underline bottom-[141px]"
+          >
+            PAULA PENA
+          </p>
+        </div>
+        <div class="clip text-center relative">
+          <img
+            src="/projectdev/team/rafa.png"
+            class="md:h-[300px] h-[250px] object cover"
+          />
+          <p
+            class="text-center position absolute right-0 left-0 mx-auto pt-1 text-md pl-4 pr-4 mt-4 underline bottom-[141px]"
+          >
+            RAFA BUZALI
+          </p>
+        </div>
+        <div class="clip text-center relative">
+          <img
+            src="/projectdev/team/begona.png"
+            class="md:h-[300px] h-[250px] object cover"
+          />
+          <p
+            class="text-center position absolute right-0 left-0 mx-auto pt-1 text-md pl-4 pr-4 mt-4 underline bottom-[141px]"
+          >
+            BEGOÑA VELÉZ
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
   <Footer />
 </Layout>
+
+<style>
+  :global(.slick-prev::before) {
+    color: #000 !important;
+    font-size: 20px !important;
+  }
+  :global(.slick-next::before) {
+    color: #000 !important;
+    font-size: 20px !important;
+  }
+  .clip {
+    overflow: hidden;
+    bottom: 0;
+    height: 500px;
+  }
+  .slider,
+  .slick-list,
+  .slick-track {
+    height: 400px;
+  }
+  .center .slick-center img {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  .center img {
+    opacity: 0.6;
+    transition: all 300ms ease;
+    bottom: 0;
+    transform: scale(0.9);
+  }
+</style>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+/>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+></script>
+<script>
+  $(".center").slick({
+    centerMode: true,
+    infinite: true,
+    slidesToShow: 3,
+    centerPadding: "0px",
+    speed: 500,
+    variableWidth: false,
+  });
+  $(".center").on(
+    "beforeChange",
+    function (event, slick, currentSlide, nextSlide) {
+      console.log("beforeChange", currentSlide, nextSlide);
+    }
+  );
+  $(".center").on("afterChange", function (event, slick, currentSlide) {
+    console.log("afterChange", currentSlide);
+  });
+</script>
