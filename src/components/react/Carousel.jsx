@@ -37,7 +37,7 @@ export default function Carousel() {
     <div className="slider-container">
       <Slider {...settings}>
         <div className="slide">
-          <img src="/projectdev/team/paula.png" className="object-cover" />
+          <img src="/projectdev/caricaturas/1.jpg" className="object-cover" />
           <div className="overlay flex flex-col">
             <h3 className="overlay-text">PAULA PENA</h3>
             <p className="text-sm text-gray-50">
@@ -46,7 +46,7 @@ export default function Carousel() {
           </div>
         </div>
         <div className="slide">
-          <img src="/projectdev/team/rafa.png" className="object-cover" />
+          <img src="/projectdev/caricaturas/2.jpg" className="object-cover" />
           <div className="overlay flex flex-col">
             <h3 className="overlay-text">RAFA BUZALI</h3>
             <p className="text-sm text-gray-50">
@@ -55,7 +55,7 @@ export default function Carousel() {
           </div>
         </div>
         <div className="slide">
-          <img src="/projectdev/team/begona.png" className="object-cover" />
+          <img src="/projectdev/caricaturas/3.jpg" className="object-cover" />
           <div className="overlay flex flex-col">
             <h3 className="overlay-text">BEGOÑA VELÉZ</h3>
             <p className="text-sm text-gray-50">
@@ -64,7 +64,7 @@ export default function Carousel() {
           </div>
         </div>
         <div className="slide">
-          <img src="/projectdev/team/regina2.png" className="object-cover" />
+          <img src="/projectdev/caricaturas/4.jpg" className="object-cover" />
           <div className="overlay flex flex-col">
             <h3 className="overlay-text">REGINA JARQUE</h3>
             <p className="text-sm text-gray-50">Interior Design Principal</p>

@@ -50,9 +50,7 @@ import Carousel from "./react/Carousel";
               class="w-full h-full object-cover object-left transition duration-500 p-1"
             />
           </div>
-          <div
-            class="h-16 text-center flex flex-col justify-center text-gray-700 pb-1"
-          >
+          <div class="h-16 text-center flex flex-col justify-center pb-1">
             <h3 class="uppercase text-sm font-medium">Montego Bay</h3>
             <p class="text-gray-600 text-xs uppercase">FIVE-STAR RESORT</p>
           </div>
@@ -82,10 +80,10 @@ import Carousel from "./react/Carousel";
 
         <!-- Small Bottom Images (1x1) -->
         <div
-          class="flex flex-col overflow-hidden h-full border border-t-0 border-r-0 md:border-r-1"
+          class="flex flex-col col-span-3 md:col-span-1 overflow-hidden h-full border border-t-0"
         >
           <div
-            class="flex-1 overflow-hidden flex justify-center flex-col text-center md:text-end pb-5 md:pb-0 px-1"
+            class="flex-1 overflow-hidden flex justify-center flex-col text-center md:text-end py-2 md:pb-0 px-1"
           >
             <p class="text-lg md:pr-4">SITE SIZE 107,034 M2 |</p>
             <p class="text-lg md:pr-4">BUILDING AREA 70,590 M2 |</p>
@@ -98,23 +96,21 @@ import Carousel from "./react/Carousel";
         </div>
 
         <div
-          class="flex flex-col col-span-2 md:col-span-4 overflow-hidden h-full border border-t-0 md:border-r-0"
+          class="flex flex-col col-span-3 md:col-span-4 overflow-hidden h-full border border-t-0"
         >
-          <div class="flex-1 overflow-hidden">
-            <img
-              src="/projectdev/uja10.png"
-              alt="Art"
-              class="w-full h-full object-cover transition duration-500 p-1"
-            />
-          </div>
-          <div class="h-16 text-center flex flex-col justify-center">
-            <h3 class="uppercase text-sm font-medium">CUSTOM MADE TABLES</h3>
-            <p class="text-gray-600 text-xs uppercase">SOLID SMOKED OAK</p>
+          <div class="flex-1 overflow-hidden"></div>
+          <div
+            class="h-16 text-center flex flex-col justify-center tracking-widest"
+          >
+            <h3 class="uppercase text-xl font-medium">
+              ÚNICO JAMAICA | <span class="font-semibold">MAIN HALL</span>
+            </h3>
+            <!-- <p class="text-gray-600 text-md uppercase">ÚNICO JAMAICA</p> -->
           </div>
         </div>
 
         <div
-          class="flex flex-col col-span-2 md:col-span-1 overflow-hidden h-full border border-t-0 md:border-r-0"
+          class="flex flex-col col-span-3 md:col-span-1 overflow-hidden h-full border border-t-0 md:border-r-0"
         >
           <div class="flex-1 overflow-hidden">
             <img
@@ -239,7 +235,7 @@ import Carousel from "./react/Carousel";
       <h3
         class="pl-2 text-2xl md:text-3xl font-semibold pb-3 mb-7 tracking-wider"
       >
-        RESTAURANTE
+        RESTAURANT
       </h3>
       <div
         class="grid grid-cols-3 md:grid-cols-6 grid-rows-2 overflow-hidden border-t-1"
@@ -336,17 +332,30 @@ import Carousel from "./react/Carousel";
             />
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="pt-10">
-      <h3
-        class="pl-2 text-2xl md:text-3xl font-semibold pb-3 mb-7 tracking-wider"
-      >
-        EQUIPO
-      </h3>
-      <div class="">
-        <Carousel client:only />
+        <div
+          class="flex flex-col col-span-3 md:col-span-6 overflow-hidden h-full border border-t-0"
+        >
+          <div class="flex-1 overflow-hidden"></div>
+          <div
+            class="h-16 text-center flex flex-col justify-center tracking-widest"
+          >
+            <h3 class="uppercase text-xl font-medium">
+              ÚNICO JAMAICA | <span class="font-semibold"
+                >TEAM BEHIND THE PROJECT</span
+              >
+            </h3>
+            <!-- <p class="text-gray-600 text-md uppercase">ÚNICO JAMAICA</p> -->
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col col-span-6 overflow-hidden h-full border border-t-0"
+        >
+          <div class="flex-1 overflow-hidden">
+            <Carousel client:only />
+          </div>
+        </div>
       </div>
     </div>
   </div>
