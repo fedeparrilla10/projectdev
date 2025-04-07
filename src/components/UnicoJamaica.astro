@@ -1,5 +1,9 @@
+---
+import Carousel from "./react/Carousel";
+---
+
 <section
-  class="flex items-center justify-center w-full bg-[#F0EBE0] pb-10 pt-30"
+  class="flex items-center justify-center flex-col w-full bg-[#F0EBE0] pb-10 pt-30"
 >
   <div class="w-full xl:w-[80%] px-1 md:px-10">
     <div class="flex flex-col">
@@ -215,98 +219,118 @@
     </div>
 
     <!-- Second Bento Grid -->
-    <div class="grid grid-cols-3 md:grid-cols-6 grid-rows-2 overflow-hidden">
-      <!-- Small Images (1x1) -->
-      <div
-        class="flex flex-col overflow-hidden h-full border border-t-0 border-r-0"
+    <div class="pt-10">
+      <h3
+        class="pl-2 text-2xl md:text-3xl font-semibold pb-3 mb-7 tracking-wider"
       >
-        <div class="flex-1 overflow-hidden">
-          <img
-            src="/projectdev/uja3.png"
-            alt="Small Image 1"
-            class="w-full h-full object-cover transition duration-500 p-1"
-          />
+        RESTAURANTE
+      </h3>
+      <div
+        class="grid grid-cols-3 md:grid-cols-6 grid-rows-2 overflow-hidden border-t-1"
+      >
+        <!-- Small Images (1x1) -->
+        <div
+          class="flex flex-col overflow-hidden h-full border border-t-0 border-r-0"
+        >
+          <div class="flex-1 overflow-hidden">
+            <img
+              src="/projectdev/uja3.png"
+              alt="Small Image 1"
+              class="w-full h-full object-cover transition duration-500 p-1"
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col overflow-hidden h-full border border-t-0 border-r-0"
+        >
+          <div class="flex-1 overflow-hidden">
+            <img
+              src="/projectdev/uja2.png"
+              alt="Small Image 2"
+              class="w-full h-full object-cover transition duration-500 p-1 border-t-0 border-r-0"
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col overflow-hidden h-full border border-t-0 border-r-0"
+        >
+          <div class="flex-1 overflow-hidden">
+            <img
+              src="/projectdev/10.png"
+              alt="Small Image 3"
+              class="w-full h-full object-cover transition duration-500 p-1"
+            />
+          </div>
+        </div>
+
+        <!-- Big Right Image (3x2) -->
+        <div
+          class="flex flex-col col-span-3 row-span-2 overflow-hidden h-full border border-t-0"
+        >
+          <div class="flex-1 overflow-hidden">
+            <img
+              src="/projectdev/comedor.png"
+              alt="Big Image"
+              class="w-full h-full object-cover transition duration-500 p-1"
+            />
+          </div>
+          <div class="h-16 text-center flex flex-col justify-center">
+            <h3 class="uppercase text-sm font-medium">BOOTH FINISHED</h3>
+            <p class="text-gray-600 text-xs uppercase">
+              IN WHITE OAK WOOD VENEER
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom Small Images (1x1) -->
+        <div
+          class="flex flex-col col-rows-2 overflow-hidden h-full border border-t-0 border-r-0"
+        >
+          <div class="flex-1 overflow-hidden">
+            <img
+              src="/projectdev/uja4.png"
+              alt="Small Image 4"
+              class="w-full h-full object-cover transition duration-500 p-1"
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col col-rows-2 overflow-hidden h-full border border-t-0 border-r-0"
+        >
+          <div class="flex-1 overflow-hidden">
+            <img
+              src="/projectdev/uja5.png"
+              alt="Small Image 5"
+              class="w-full h-full object-cover transition duration-500 p-1"
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col col-rows-2 overflow-hidden h-full border border-t-0 border-r-0"
+        >
+          <div class="flex-1 overflow-hidden">
+            <img
+              src="/projectdev/14.png"
+              alt="Small Image 6"
+              class="w-full h-full object-cover transition duration-500 p-1"
+            />
+          </div>
         </div>
       </div>
+    </div>
 
-      <div
-        class="flex flex-col overflow-hidden h-full border border-t-0 border-r-0"
+    <div class="pt-10">
+      <h3
+        class="pl-2 text-2xl md:text-3xl font-semibold pb-3 mb-7 tracking-wider"
       >
-        <div class="flex-1 overflow-hidden">
-          <img
-            src="/projectdev/uja2.png"
-            alt="Small Image 2"
-            class="w-full h-full object-cover transition duration-500 p-1 border-t-0 border-r-0"
-          />
-        </div>
-      </div>
-
-      <div
-        class="flex flex-col overflow-hidden h-full border border-t-0 border-r-0"
-      >
-        <div class="flex-1 overflow-hidden">
-          <img
-            src="/projectdev/10.png"
-            alt="Small Image 3"
-            class="w-full h-full object-cover transition duration-500 p-1"
-          />
-        </div>
-      </div>
-
-      <!-- Big Right Image (3x2) -->
-      <div
-        class="flex flex-col col-span-3 row-span-2 overflow-hidden h-full border border-t-0"
-      >
-        <div class="flex-1 overflow-hidden">
-          <img
-            src="/projectdev/comedor.png"
-            alt="Big Image"
-            class="w-full h-full object-cover transition duration-500 p-1"
-          />
-        </div>
-        <div class="h-16 text-center flex flex-col justify-center">
-          <h3 class="uppercase text-sm font-medium">BOOTH FINISHED</h3>
-          <p class="text-gray-600 text-xs uppercase">
-            IN WHITE OAK WOOD VENEER
-          </p>
-        </div>
-      </div>
-
-      <!-- Bottom Small Images (1x1) -->
-      <div
-        class="flex flex-col col-rows-2 overflow-hidden h-full border border-t-0 border-r-0"
-      >
-        <div class="flex-1 overflow-hidden">
-          <img
-            src="/projectdev/uja4.png"
-            alt="Small Image 4"
-            class="w-full h-full object-cover transition duration-500 p-1"
-          />
-        </div>
-      </div>
-
-      <div
-        class="flex flex-col col-rows-2 overflow-hidden h-full border border-t-0 border-r-0"
-      >
-        <div class="flex-1 overflow-hidden">
-          <img
-            src="/projectdev/uja5.png"
-            alt="Small Image 5"
-            class="w-full h-full object-cover transition duration-500 p-1"
-          />
-        </div>
-      </div>
-
-      <div
-        class="flex flex-col col-rows-2 overflow-hidden h-full border border-t-0 border-r-0"
-      >
-        <div class="flex-1 overflow-hidden">
-          <img
-            src="/projectdev/14.png"
-            alt="Small Image 6"
-            class="w-full h-full object-cover transition duration-500 p-1"
-          />
-        </div>
+        EQUIPO
+      </h3>
+      <div class="">
+        <Carousel client:only />
       </div>
     </div>
   </div>
