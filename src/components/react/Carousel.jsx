@@ -38,15 +38,27 @@ export default function Carousel() {
       <Slider {...settings}>
         <div className="slide">
           <img src="/projectdev/caricaturas/1b.png" className="object-cover" />
+          <h2 class="text-center font-semibold text-md text-1xl border-t-1 w-[200px] mx-auto">
+            REGINA JARQUE
+          </h2>
         </div>
         <div className="slide">
           <img src="/projectdev/caricaturas/2b.png" className="object-cover" />
+          <h2 class="text-center font-semibold text-md text-1xl border-t-1 w-[200px] mx-auto">
+            RAFA BAZULI
+          </h2>
         </div>
         <div className="slide">
           <img src="/projectdev/caricaturas/6b.png" className="object-cover" />
+          <h2 class="text-center font-semibold text-md text-1xl border-t-1 w-[200px] mx-auto">
+            BEGONA VELEZ
+          </h2>
         </div>
         <div className="slide">
           <img src="/projectdev/caricaturas/4b.png" className="object-cover" />
+          <h2 class="text-center font-semibold text-md text-1xl border-t-1 w-[200px] mx-auto">
+            PAULA PENA
+          </h2>
         </div>
       </Slider>
     </div>
