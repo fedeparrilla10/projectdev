@@ -8,10 +8,10 @@ export default function Carousel() {
     infinite: true,
     speed: 600,
     autoplay: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
-    dots: true,
+    dots: false,
     centerMode: true,
     centerPadding: "0px",
     className: "center",
@@ -37,38 +37,16 @@ export default function Carousel() {
     <div className="slider-container">
       <Slider {...settings}>
         <div className="slide">
-          <img src="/projectdev/caricaturas/1.jpg" className="object-cover" />
-          <div className="overlay flex flex-col">
-            <h3 className="overlay-text">PAULA PENA</h3>
-            <p className="text-sm text-gray-50">
-              Architecture Director at BPA BCN
-            </p>
-          </div>
+          <img src="/projectdev/caricaturas/1b.png" className="object-cover" />
         </div>
         <div className="slide">
-          <img src="/projectdev/caricaturas/2.jpg" className="object-cover" />
-          <div className="overlay flex flex-col">
-            <h3 className="overlay-text">RAFA BUZALI</h3>
-            <p className="text-sm text-gray-50">
-              Architecture Director at BPA MIA
-            </p>
-          </div>
+          <img src="/projectdev/caricaturas/2b.png" className="object-cover" />
         </div>
         <div className="slide">
-          <img src="/projectdev/caricaturas/3.jpg" className="object-cover" />
-          <div className="overlay flex flex-col">
-            <h3 className="overlay-text">BEGOÑA VELÉZ</h3>
-            <p className="text-sm text-gray-50">
-              Interior Design Director at J.S CUN
-            </p>
-          </div>
+          <img src="/projectdev/caricaturas/6b.png" className="object-cover" />
         </div>
         <div className="slide">
-          <img src="/projectdev/caricaturas/4.jpg" className="object-cover" />
-          <div className="overlay flex flex-col">
-            <h3 className="overlay-text">REGINA JARQUE</h3>
-            <p className="text-sm text-gray-50">Interior Design Principal</p>
-          </div>
+          <img src="/projectdev/caricaturas/4b.png" className="object-cover" />
         </div>
       </Slider>
     </div>
